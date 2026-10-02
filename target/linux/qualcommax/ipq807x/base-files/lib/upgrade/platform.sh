@@ -259,7 +259,7 @@ platform_do_upgrade() {
 		fw_setenv flag_try_sys2_failed 8
 
 		# Kernel and rootfs are placed in 2 different UBI
-		CI_KERN_UBIPART="rootfs"
+		CI_KERN_UBIPART="ubi_kernel"
 		CI_ROOT_UBIPART="rootfs"
 		CI_DATA_UBIPART="rootfs"
 		nand_do_upgrade "$1"
